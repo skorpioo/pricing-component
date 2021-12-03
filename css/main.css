@@ -18,7 +18,7 @@ html:focus-within {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: url(../images/bg-top.svg) no-repeat top right, url(../images/bg-bottom.svg) no-repeat bottom left;
+  background: url(images/bg-top.svg) no-repeat top right, url(images/bg-bottom.svg) no-repeat bottom left;
   background-color: #f6f6fe;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
