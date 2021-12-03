@@ -83,7 +83,7 @@ a:not([class]) {
   margin: 4rem 0 8rem;
 }
 
-.pricing-component .toggle-wrapper h5 {
+.pricing-component .toggle-wrapper h3 {
   font-size: 1.3rem;
 }
 
@@ -168,6 +168,10 @@ a:not([class]) {
 
 .pricing-component .card-container .card .price span {
   font-size: 3rem;
+}
+
+.pricing-component .card-container .card h2 {
+  font-size: 1.5rem;
 }
 
 .pricing-component .card-container .card .learn-more {
