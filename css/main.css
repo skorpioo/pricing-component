@@ -83,7 +83,7 @@ a:not([class]) {
   margin: 4rem 0 8rem;
 }
 
-.pricing-component .toggle-wrapper label {
+.pricing-component .toggle-wrapper h5 {
   font-size: 1.3rem;
 }
 
@@ -161,7 +161,7 @@ a:not([class]) {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5rem;
-  font-size: 5.6rem;
+  font-size: 6rem;
   padding: 2rem 0;
   border-bottom: 1px solid #b3b5c6;
 }
