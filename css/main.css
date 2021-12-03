@@ -80,10 +80,10 @@ a:not([class]) {
       -ms-flex-align: center;
           align-items: center;
   gap: 2.5rem;
-  margin: 4rem 0 8rem;
+  margin: 4rem 0 10rem;
 }
 
-.pricing-component .toggle-wrapper h3 {
+.pricing-component .toggle-wrapper h2 {
   font-size: 1.3rem;
 }
 
@@ -170,7 +170,7 @@ a:not([class]) {
   font-size: 3rem;
 }
 
-.pricing-component .card-container .card h2 {
+.pricing-component .card-container .card h3 {
   font-size: 1.5rem;
 }
 
