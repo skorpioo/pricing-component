@@ -67,7 +67,7 @@ a:not([class]) {
 		display: flex;
 		align-items: center;
 		gap: 2.5rem;
-		margin: 4rem 0 10rem;
+		margin: 4rem 0 9rem;
 
 		h2 {
 			font-size: 1.3rem;
@@ -115,7 +115,7 @@ a:not([class]) {
 		.card {
 			border-radius: 0.8rem;
 			flex: 0 0 33%;
-			box-shadow: 0px 5px 10px 2px hsla(232, 13%, 33%, 0.2);
+			box-shadow: 0px 5px 10px 2px hsla(232, 13%, 33%, 0.1);
 
 			.price {
 				display: flex;
