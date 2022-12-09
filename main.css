@@ -154,7 +154,7 @@ a:not([class]) {
       -ms-flex-align: center;
           align-items: center;
   height: 11.4rem;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .pricing-component .card-container .card .price {
   position: absolute;
