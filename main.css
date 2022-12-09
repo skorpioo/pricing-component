@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url(./images/bg-top.svg) no-repeat top right, url(./images/bg-bottom.svg) no-repeat bottom left;
+  background-color: hsl(240deg, 78%, 98%);
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+.white-txt {
+  color: white;
+}
+
+.light-grey-txt {
+  color: hsl(234deg, 14%, 74%);
+}
+
+.grey-txt {
+  color: hsl(233deg, 13%, 49%);
+}
+
+.black-txt {
+  color: hsl(232deg, 13%, 33%);
+}
+
+.pricing-component {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6rem 3.2rem 4rem 3.2rem;
+}
+.pricing-component .toggle-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+  margin: 4rem 0 9rem;
+}
+.pricing-component .toggle-wrapper h2 {
+  font-size: 1.3rem;
+}
+.pricing-component .toggle-wrapper input {
+  position: absolute;
+  left: -9999px;
+}
+.pricing-component .toggle-wrapper .toggle-outer {
+  width: 5.5rem;
+  border-radius: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3rem;
+  cursor: pointer;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(hsl(236deg, 72%, 79%)), to(hsl(237deg, 63%, 64%)));
+  background-image: linear-gradient(90deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  -webkit-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
+}
+.pricing-component .toggle-wrapper .toggle-outer .toggle-inner {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transition: translate 250ms ease-in-out;
+  transition: translate 250ms ease-in-out;
+}
+.pricing-component .toggle-wrapper .toggle-outer:hover {
+  opacity: 0.6;
+}
+.pricing-component .toggle-wrapper .toggle-outer.active .toggle-inner {
+  translate: -100%;
+}
+.pricing-component .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 100rem;
+}
+.pricing-component .card-container .card {
+  border-radius: 0.8rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  -webkit-box-shadow: 0px 5px 10px 2px hsla(232deg, 13%, 33%, 0.1);
+          box-shadow: 0px 5px 10px 2px hsla(232deg, 13%, 33%, 0.1);
+}
+.pricing-component .card-container .card .price-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 11.4rem;
+  overflow-y: hidden;
+}
+.pricing-component .card-container .card .price {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  font-size: 6rem;
+  padding: 2rem 0;
+  -webkit-transition: translate 250ms ease-in-out, opacity 500ms ease-in-out;
+  transition: translate 250ms ease-in-out, opacity 500ms ease-in-out;
+}
+.pricing-component .card-container .card .price span {
+  font-size: 3rem;
+}
+.pricing-component .card-container .card h3 {
+  font-size: 1.5rem;
+}
+.pricing-component .card-container .card .learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.3rem 1rem;
+  border-radius: 0.6rem;
+  margin-top: 3.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.pricing-component .card-container .card ul {
+  list-style: none;
+  border-top: 1px solid hsl(234deg, 14%, 84%);
+}
+.pricing-component .card-container .card ul li {
+  padding: 2rem 0;
+  border-bottom: 1px solid hsl(234deg, 14%, 84%);
+}
+.pricing-component .card-container .card:nth-child(1),
+.pricing-component .card-container .card:nth-child(3) {
+  background: white;
+  padding: 3rem;
+  margin-bottom: 6rem;
+}
+.pricing-component .card-container .card:nth-child(2) {
+  background: linear-gradient(135deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+  padding: 5rem 3rem;
+  margin-bottom: 2rem;
+}
+.pricing-component .card-container .card:nth-child(1) a,
+.pricing-component .card-container .card:nth-child(3) a {
+  background-image: -webkit-gradient(linear, left top, right top, from(hsl(236deg, 72%, 79%)), to(hsl(237deg, 63%, 64%)));
+  background-image: linear-gradient(90deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  color: white;
+}
+.pricing-component .card-container .card:nth-child(1) a:hover,
+.pricing-component .card-container .card:nth-child(3) a:hover {
+  background-image: none;
+  color: hsl(237deg, 63%, 64%);
+  outline: hsl(237deg, 63%, 64%) solid 1px;
+}
+.pricing-component .card-container .card:nth-child(2) a {
+  background: white;
+  color: hsl(237deg, 63%, 64%);
+  position: relative;
+}
+.pricing-component .card-container .card:nth-child(2) a:hover {
+  background: transparent;
+  color: white;
+  outline: white solid 1px;
+}
+.pricing-component .card:nth-child(1) .price,
+.pricing-component .card:nth-child(3) .price {
+  -webkit-transition-delay: 250ms;
+          transition-delay: 250ms;
+}
+.pricing-component .card .price.annually {
+  translate: 0 -100%;
+  opacity: 0;
+}
+.pricing-component .show-annually .card .price.annually {
+  translate: 0;
+  opacity: 1;
+}
+.pricing-component .show-annually .card .price.monthly {
+  translate: 0 100%;
+  opacity: 0;
+}
+
+@media (max-width: 52em) {
+  body {
+    background: url(./images/bg-top.svg) no-repeat top right -200px;
+  }
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-container .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .card-container .card:nth-child(1) .price,
+.card-container .card:nth-child(3) .price {
+    -webkit-transition-delay: 0ms;
+            transition-delay: 0ms;
+  }
+}/*# sourceMappingURL=main.css.map */
