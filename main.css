@@ -245,7 +245,7 @@ a:not([class]) {
           transition-delay: 250ms;
 }
 .pricing-component .card .price.annually {
-  translate: 0 -100%;
+  translate: 0 100%;
   opacity: 0;
 }
 .pricing-component .show-annually .card .price.annually {
